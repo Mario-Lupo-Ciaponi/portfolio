@@ -2,3 +2,7 @@ li,
 ol {
   list-style-type: none;
 }
+
+button {
+  cursor: pointer;
+}

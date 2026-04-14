@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar__logo">Mario Lupo Ciaponi</div>
       <ul className="navbar__links">
-        <li className="navbar__item active">
+        <li className="navbar__item">
           <a href="#about">About</a>
         </li>
         <li className="navbar__item">

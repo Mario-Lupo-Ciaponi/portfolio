@@ -19,7 +19,7 @@
 }
 
 .tech-card:hover .tech-card__icon-wrapper {
-  transform: rotate(10deg);
+  transform: rotate(10deg) scale(1.15);
   background-color: rgba(var(--accent-blue-rgb), 0.1);
 }
 

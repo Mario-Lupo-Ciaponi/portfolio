@@ -1,8 +1,14 @@
 :root {
   --bg-primary: #0c0e29;
+  --bg-secondary: #12142d;
+  --bg-tertiary: #0d1026;
   --navbar-border: #242649;
   --text-primary: #ffffff;
+  --text-secondary: #8e92b0;
   --accent-cyan: #00e5ff;
+  --accent-cyan-rgb: 0, 229, 255;
+  --accent-blue: #38bdf8;
+  --accent-blue-rgb: 56, 189, 248;
   --font-main: 'Inter', sans-serif;
 }
 

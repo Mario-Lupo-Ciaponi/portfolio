@@ -5,35 +5,35 @@ import jsIcon from '../assets/images/js-icon.png';
 import pythonIcon from '../assets/images/python-icon.png';
 import reactIcon from '../assets/images/react-icon.png';
 
-export const techStack = [
+export const techStackData = [
   {
     name: "HTML/CSS",
     icon: htmlCssIcon,
-    description: "Building semantic web structures and fluid, responsive designs from scratch."
+    description: "Foundation of semantic and responsive web design."
   },
   {
     name: "JavaScript",
     icon: jsIcon,
-    description: "Adding dynamic behavior, complex logic, and interactive capabilities to applications."
+    description: "Core language for dynamic and interactive logic."
   },
   {
     name: "React",
     icon: reactIcon,
-    description: "Creating scalable, component-driven user interfaces for modern web applications."
+    description: "Scalable, component-driven user interfaces."
   },
   {
     name: "Python",
     icon: pythonIcon,
-    description: "Writing robust backend scripts, automations, and scalable server-side architecture."
+    description: "Robust backend scripting and server-side logic."
   },
   {
     name: "Django",
     icon: djangoIcon,
-    description: "Rapidly developing secure and maintainable database-driven web applications."
+    description: "Rapid, secure, database-driven web framework."
   },
   {
     name: "Git",
     icon: gitIcon,
-    description: "Managing source code history, collaborating securely, and ensuring reliable version control."
+    description: "Reliable version control and team collaboration."
   }
 ];

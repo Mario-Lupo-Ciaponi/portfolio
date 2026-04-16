@@ -1,0 +1,227 @@
+.footer {
+    background-color: var(--bg-secondary);
+    padding: 5rem 0 2rem 0;
+    border-top: 1px solid var(--navbar-border);
+    margin-top: 6rem;
+}
+
+.footer__container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+/* Info Column */
+.footer__brand-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.footer__brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 0.5rem 0;
+}
+
+.footer__brand-underline {
+    width: 2.5rem;
+    height: 3px;
+    background-color: var(--accent-cyan);
+    border-radius: 2px;
+}
+
+.footer__description {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 25rem;
+}
+
+.footer__status {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.footer__status-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #10b981; /* Success green */
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+}
+
+/* Titles */
+.footer__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 2rem 0;
+}
+
+.footer__subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 2.5rem 0 1rem 0;
+}
+
+/* Links */
+.footer__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer__links a:hover {
+    color: var(--accent-blue);
+}
+
+/* Contact Column */
+.footer__email-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(var(--accent-blue-rgb), 0.05);
+    border: 1px solid var(--navbar-border);
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    transition: border-color 0.3s ease;
+}
+
+.footer__email-box:hover {
+    border-color: var(--accent-blue);
+}
+
+.footer__icon-card {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--navbar-border);
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+}
+
+.footer__email-text {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Socials */
+.footer__socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__social-card {
+    width: 2.75rem;
+    height: 2.75rem;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--navbar-border);
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer__social-card:hover {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+    transform: translateY(-2px);
+    background-color: rgba(var(--accent-blue-rgb), 0.05);
+}
+
+/* Bottom Bar */
+.footer__bottom {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--navbar-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.footer__heart-icon {
+    color: #ef4444; /* Heart red */
+    margin: 0 0.25rem;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 64rem) {
+    .footer__grid {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .footer {
+        padding: 4rem 0 2rem 0;
+        text-align: center;
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .footer__brand-wrapper,
+    .footer__status {
+        justify-content: center;
+    }
+
+    .footer__brand-underline {
+        margin: 0 auto;
+    }
+
+    .footer__description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer__email-box {
+        justify-content: center;
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+
+    .footer__socials {
+        justify-content: center;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}

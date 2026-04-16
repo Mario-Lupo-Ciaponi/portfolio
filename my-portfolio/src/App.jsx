@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero.jsx";
 import About from "./components/About/About.jsx";
 import TechStack from "./components/TechStack/TechStack.jsx";
 import Projects from "./components/Projects/Projects.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import './App.css'
 
 function App() {
@@ -13,9 +14,10 @@ function App() {
       <About />
       <TechStack />
       <Projects />
+      <Footer />
     </>
   )
 }
 
-export default App
+export default App;
 

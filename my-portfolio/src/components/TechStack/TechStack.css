@@ -8,3 +8,9 @@
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
+.tech-stack__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+}

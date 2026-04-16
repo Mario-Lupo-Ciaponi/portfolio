@@ -1,5 +1,6 @@
 import TechStackHeader from '../TechStackHeader/TechStackHeader';
 import TechStackGrid from '../TechStackGrid/TechStackGrid';
+import LearningTag from '../LearningTag/LearningTag';
 import './TechStack.css';
 
 const TechStack = () => {
@@ -8,6 +9,10 @@ const TechStack = () => {
       <div className="tech-stack__container">
         <TechStackHeader />
         <TechStackGrid />
+        
+        <div className="tech-stack__footer">
+          <LearningTag />
+        </div>
       </div>
     </section>
   );

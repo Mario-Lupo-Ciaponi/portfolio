@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Hero from "./components/Hero/Hero.jsx";
 import About from "./components/About/About.jsx";
+import AboutTraits from "./components/AboutTraits/AboutTraits.jsx";
+import Approach from "./components/Approach/Approach.jsx";
 import TechStack from "./components/TechStack/TechStack.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import Footer from "./components/Footer/Footer.jsx";
@@ -14,6 +16,8 @@ function App() {
       <About />
       <TechStack />
       <Projects />
+      <Approach />
+      <AboutTraits />
       <Footer />
     </>
   )

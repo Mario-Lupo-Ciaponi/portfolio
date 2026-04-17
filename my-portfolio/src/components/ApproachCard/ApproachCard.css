@@ -1,0 +1,63 @@
+.approach-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--navbar-border);
+    padding: 2.5rem 2rem;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.4s ease;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.approach-card:hover {
+    transform: translateY(-0.5rem);
+    border-color: var(--accent-blue);
+    box-shadow: 0 1rem 3rem rgba(var(--accent-blue-rgb), 0.15);
+}
+
+.approach-card__icon-wrapper {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgba(var(--accent-blue-rgb), 0.1);
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-blue);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    transition: transform 0.4s ease;
+}
+
+.approach-card:hover .approach-card__icon-wrapper {
+    transform: scale(1.1) rotate(5deg);
+    background-color: rgba(var(--accent-blue-rgb), 0.2);
+    color: var(--accent-cyan);
+}
+
+.approach-card__title {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1.25rem 0;
+    line-height: 1.3;
+    transition: color 0.4s ease;
+}
+
+.approach-card:hover .approach-card__title {
+    color: var(--accent-blue);
+}
+
+.approach-card__description {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Specific icon sizing for variety if needed */
+.approach-card__icon-wrapper svg {
+    filter: drop-shadow(0 0 8px rgba(var(--accent-blue-rgb), 0.3));
+}

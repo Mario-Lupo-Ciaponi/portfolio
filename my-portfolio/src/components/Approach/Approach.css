@@ -1,0 +1,51 @@
+.approach {
+    padding: 8rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.approach__container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.approach__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+/* Background decoration like the screenshot subtle light/glow */
+.approach::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60rem;
+    height: 30rem;
+    background: radial-gradient(circle, rgba(var(--accent-blue-rgb), 0.05) 0%, transparent 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Tablet Layout */
+@media screen and (max-width: 64rem) {
+    .approach__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 48rem) {
+    .approach {
+        padding: 6rem 0;
+    }
+
+    .approach__grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
